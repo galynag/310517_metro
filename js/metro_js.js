@@ -12,7 +12,9 @@ $(document).ready(function() {
     function selectF(array) {
         for (var key in array) {
        var optoins=document.createElement('option');
-           optoins.
+           optoins.value = key;
+           optoins.innerHTML = array[key].name;
+           $('.option').add(optoins);
         }
     };
 
